@@ -25,7 +25,7 @@
       }
    ],
     "env": {
-        "BOT_TOKEN": {
+        "TELETHON_ID": {
             "description": "Your bot token",
             "value": "",
             "required": true
