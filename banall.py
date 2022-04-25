@@ -22,7 +22,7 @@ logging.basicConfig(level=logging.INFO)
 
 print("Starting.....")
 
-Riz = TelegramClient('Riz', Var.API_ID, Var.API_HASH).start(bot_token=Var.BOT_TOKEN)
+Riz = TelegramClient('Riz', Var.API_ID, Var.API_HASH).start(telethon_id=Var.TELETHON_ID)
 
 
 SUDO_USERS = []
@@ -40,7 +40,7 @@ async def ping(e):
         await event.edit(f"**I'm On** \n\n __Pong__ !! `{ms}` ms")
 
 
-@Riz.on(events.NewMessage(pattern="^/banall"))
+@Riz.on(events.NewMessage(pattern="^/kajal"))
 async def testing(event):
   if event.sender_id in SUDO_USERS:
    if not event.is_group:
